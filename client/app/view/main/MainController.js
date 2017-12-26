@@ -13,7 +13,6 @@ Ext.define('client.view.main.MainController', {
             var me = this,
                   vm = me.getViewModel(),
                   personnelStore = vm.getStore('PersonnelListStore');
-            //var personnelStore = this.getStore('PersonnelListStore');
 
             var personnelModel = Ext.create('client.model.personnel');
             personnelModel.set("id", 0);
@@ -24,8 +23,6 @@ Ext.define('client.view.main.MainController', {
             vm.set('currentEntry', record);
             personnelStore.insert(0, personnelModel);
 
-            //var personnelGrid = this.getView();
-            //personnelGrid.editingPlugin.startEdit(personnelModel, 1);
             me.getView().down('mainlist').getView().select(0)
                     me.setActiveEastCard(1);
                     me.gridAddBtnSetDisabled(true);
@@ -62,7 +59,6 @@ Ext.define('client.view.main.MainController', {
         },
 
     onItemSelected: function (sender, record) {
-        //Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
         var me = this;
         me.setActiveEastCard(1);
         me.getViewModel().set('currentEntry', record);

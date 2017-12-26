@@ -46,8 +46,7 @@ Ext.define('client.view.main.Form', {
         xtype: 'textfield',
         bind: {
             value: '{currentEntry.phone}'
-        }//,
-        //flex: 1
+        }
     }
     ],
     buttons: [{

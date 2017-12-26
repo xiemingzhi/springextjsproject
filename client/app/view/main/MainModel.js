@@ -32,12 +32,9 @@ Ext.define('client.view.main.MainModel', {
             },
             reader : {
                 type : 'json',
-                //rootProperty : '_embedded.{entityName}'
             },
             writer : {
                 type : 'json',
-                //writeAllFields : true,
-                //nameProperty : 'mapping'
             }
         }
 

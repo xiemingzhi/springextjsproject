@@ -6,16 +6,10 @@ Ext.define('client.view.main.List', {
     xtype: 'mainlist',
 
     requires: [
-        //'client.view.main.PersonnelViewModel',
-        //'client.store.Personnel'
     ],
 
-    //viewModel: { type: 'personnelviewmodel' },
     title: 'Personnel',
 
-    // store: {
-    //     type: 'personnel'
-    // },
     bind: {
             store: '{PersonnelListStore}'
         },

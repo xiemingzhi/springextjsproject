@@ -9,7 +9,24 @@ Install Sencha cmd 6
 Install JDK 8
 Install maven 3
 
+# Install Ext JS
+
+```
+cd client
+sencha app install=/path/to/extjs/
+sencha app build
+```
+
 # Start web service
+
+```
+cd springextjsproject
+mvn package 
+java -jar target/demo-$version.jar
+```
+Open browser: http://localhost:8080/
+
+# Development
 
 Open command prompt
 

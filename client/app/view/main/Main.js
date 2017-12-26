@@ -20,18 +20,7 @@ Ext.define('client.view.main.Main', {
     layout: 'border',
     controller: 'main',
     viewModel: 'main',
-    /*ui: 'navigation',
-    tabBarHeaderPosition: 1,
-    titleRotation: 0,
-    tabRotation: 0,
-
-    tabBar: {
-        flex: 1,
-        layout: {
-            align: 'stretch',
-            overflowHandler: 'none'
-        }
-    },*/
+    
     items: [{
             region: 'north',
             xtype: 'container',
